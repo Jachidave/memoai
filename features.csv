@@ -1,0 +1,19 @@
+feature,area,priority,original,clone,notes
+Upload meeting audio file (drag & drop or file picker),upload,must,yes,yes,S02 AudioUploader with drag-drop and file picker
+Process audio with AI to generate summary,ai-processing,must,yes,yes,Placeholder AI processing implemented
+Generate action items from meeting,ai-processing,must,yes,yes,Extracts to-do items from meeting content
+Identify key topics discussed,ai-processing,must,yes,yes,Auto-detects main discussion points
+Detect meeting participants,ai-processing,must,yes,yes,Extracts names mentioned in transcript
+Save notes to local storage,storage,must,yes,yes,In-memory storage with database.ts
+View list of saved notes,notes,must,yes,yes,S01 NoteList component complete
+Edit and preview generated notes,notes,must,yes,yes,S03 NoteEditor with preview
+Configure AI provider settings,settings,must,yes,partial,Settings defined in types, modal not yet implemented
+Local SQLite storage (desktop version),storage,should,no,no,Planned for Electron version
+Sync notes across devices,storage,should,no,no,Out of scope for local-first app
+Share notes with team,sharing,could,yes,no,Export functionality pending
+Meeting transcription (Whisper integration),transcription,could,yes,no,Placeholder - needs whisper.cpp or API
+IndexedDB persistence layer,storage,must,no,no,Persist notes between sessions for web
+Progress indicators for AI processing,ui,should,no,no,Better UX for long processing
+PWA offline support,storage,should,no,no,Work offline with cached notes
+PDF/Markdown export,sharing,should,no,no,Share notes with colleagues
+Mobile app (React Native),platform,could,no,no,Record on phone
